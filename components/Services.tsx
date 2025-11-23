@@ -19,7 +19,7 @@ const ServiceCard = ({
 const Services = () => {
   const services = [{
     title: 'Terapia Individual',
-    description: 'Sesiones personalizadas para abordar tus necesidades específicas en un espacio confidencial y seguro.',
+    description: 'La terapia individual es un proceso de crecimiento personal, donde trabajas junto a un profesional para comprenderte mejor, y superar dificultades. Te propongo sesiones personalizadas para abordar tus necesidades específicas en un espacio confidencial y seguro.',
     icon: Heart
   }, {
     title: 'Terapia Presencial',

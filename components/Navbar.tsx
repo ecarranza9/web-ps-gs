@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
         >
            <div className="font-serif text-2xl font-bold text-text tracking-wide group-hover:text-primary transition-colors">
              GS
-             <span className="block text-xs font-sans font-normal text-primary uppercase tracking-widest">Lic. Giuliana Segura</span>
+             <span className="block text-xs font-sans font-normal text-secondary uppercase tracking-widest">Lic. Giuliana Segura</span>
            </div>
         </div>
 
@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-text-light hover:text-primary font-medium text-sm tracking-wide transition-colors uppercase"
+              className="text-secondary hover:text-primary font-medium text-sm tracking-wide transition-colors uppercase"
             >
               {item.label}
             </button>

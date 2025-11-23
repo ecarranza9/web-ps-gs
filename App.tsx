@@ -71,15 +71,15 @@ const App: React.FC = () => {
         <div className="absolute bottom-1/4 left-10 md:left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-6 relative z-10 text-center md:text-left md:flex md:items-center md:gap-16">
-          <div className="md:w-1/2 space-y-6 animate-fade-in-up">
+          <div className="md:w-3/5 space-y-6 animate-fade-in-up">
              <div className="inline-block px-4 py-1 border border-primary/50 rounded-full text-primary-dark text-sm font-medium tracking-wider mb-2 bg-white/50 backdrop-blur-sm">
                 PSICOLOGÍA CLÍNICA
              </div>
-             <h1 className="text-5xl md:text-7xl font-serif text-text font-medium leading-tight">
-               Tu espacio terapéutico para <br />
-               <span className="text-primary italic">transformar</span> tu vida.
+             <h1 className="text-[2.8rem] md:text-[3.55rem] font-serif text-text font-medium leading-tight">
+               Tu espacio terapéutico<br />
+               para <span className="text-primary italic">transformar</span> tu vida.
              </h1>
-             <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-xl">
+             <p className="text-lg md:text-[1.15rem] text-text-light leading-relaxed max-w-xl text-justify">
              Acompaño en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal. Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
@@ -93,7 +93,7 @@ const App: React.FC = () => {
           </div>
           
           {/* Image/Visual */}
-          <div className="hidden md:block md:w-1/2 relative">
+          <div className="hidden md:block md:w-2/5 relative">
             <div className="relative max-w-sm mx-auto aspect-square">
                 {/* Frame imitating the logo geometric shape */}
                 <div className="absolute inset-0 border-2 border-secondary rotate-3 rounded-full transform translate-x-4 translate-y-4"></div>
@@ -125,7 +125,7 @@ const App: React.FC = () => {
             <div className="md:w-1/2 order-1 md:order-2">
               <h2 className="text-secondary font-sans uppercase tracking-widest text-sm font-bold mb-3">Sobre Mí</h2>
               <div className="w-16 h-1 bg-primary mb-8"></div>
-              <p className="text-text-light leading-relaxed mb-6 text-lg text-justify">
+              <p className="text-text-light leading-relaxed mb-6 text-justify">
               Mi nombre es Giuliana Segura, soy Licenciada en Psicología, me especialice en Terapia Cognitiva Conductual e Integrativa, me dedico a la atención a adultos. Mi vocación es compañar a las personas en sus procesos de cambios, posibilitando el autoconocimiento y autocuidado, potenciando el crecimiento y desarrollo personal.
               <br /><br />
               Mi objetivo es ofrecerte herramientas prácticas y efectivas, apoyo constante y un espacio de confianza para que puedas gestionar tus emociones, comprender tus patrones y construir cambios sostenibles en el tiempo.
@@ -154,7 +154,7 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h2 className="text-4xl font-serif text-text mb-4">Mi Enfoque Terapéutico</h2>
+            <h2 className="text-4xl font-serif text-text mb-4">Enfoque Terapéutico</h2>
             <p className="text-text-light mb-12">
                 Trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica.
             </p>
