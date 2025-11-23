@@ -48,15 +48,11 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
             Mis Servicios
           </h2>
-          <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
-          <p className="text-gray-700 max-w-2xl mx-auto">
-            Ofrezco diversos servicios terapéuticos adaptados a tus necesidades
-            específicas, siempre con un enfoque humano y profesional.
-          </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />)}
         </div>
+        <div className="w-24 h-1 bg-gold mx-auto mb-10"></div>
       </div>
     </section>;
 };
