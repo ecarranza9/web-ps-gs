@@ -76,11 +76,11 @@ const App: React.FC = () => {
                 PSICOLOGÍA CLÍNICA
              </div>
              <h1 className="text-5xl md:text-7xl font-serif text-text font-medium leading-tight">
-               Tu espacio seguro para <br />
+               Tu espacio terapéutico para <br />
                <span className="text-primary italic">transformar</span> tu vida.
              </h1>
              <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-xl">
-               Acompaño procesos de ansiedad, estrés y desarrollo personal con una mirada humana y basada en evidencia.
+             Acompaño en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal. Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
                <a href="#contacto" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
@@ -124,13 +124,13 @@ const App: React.FC = () => {
           </div>
             <div className="md:w-1/2 order-1 md:order-2">
               <h2 className="text-secondary font-sans uppercase tracking-widest text-sm font-bold mb-3">Sobre Mí</h2>
-              <h3 className="text-4xl font-serif text-text mb-6">Lic. Giuliana Segura</h3>
               <div className="w-16 h-1 bg-primary mb-8"></div>
-              <p className="text-text-light leading-relaxed mb-6 text-lg">
-                Soy psicóloga especializada en <strong>Terapia Cognitivo-Conductual</strong> e <strong>Integrativa</strong> para adultos. Mi vocación es acompañar a las personas en sus procesos de cambio, brindando herramientas prácticas y efectivas.
-              </p>
-              <p className="text-text-light leading-relaxed mb-6">
-                Creo firmemente que cada persona es única, por lo que mi enfoque combina técnicas basadas en evidencia con una mirada humana y flexible, adaptada a tus necesidades específicas.
+              <p className="text-text-light leading-relaxed mb-6 text-lg text-justify">
+              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, me especialice en Terapia Cognitiva Conductual e Integrativa, me dedico a la atención a adultos. Mi vocación es compañar a las personas en sus procesos de cambios, posibilitando el autoconocimiento y autocuidado, potenciando el crecimiento y desarrollo personal.
+              <br /><br />
+              Mi objetivo es ofrecerte herramientas prácticas y efectivas, apoyo constante y un espacio de confianza para que puedas gestionar tus emociones, comprender tus patrones y construir cambios sostenibles en el tiempo.
+              <br /><br />
+              Creo firmemente que cada persona es única, por lo que mi enfoque combina técnicas basadas en evidencia con una mirada humana y flexible, adaptada a tus necesidades específicas.
               </p>
               <ul className="space-y-3 mt-8">
                 <li className="flex items-center gap-3 text-text">

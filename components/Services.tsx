@@ -22,12 +22,12 @@ const Services = () => {
     description: 'Sesiones personalizadas para abordar tus necesidades específicas en un espacio confidencial y seguro.',
     icon: Heart
   }, {
-    title: 'Terapia de Parejas',
-    description: 'Acompañamiento para mejorar la comunicación y resolver conflictos en la relación de pareja.',
+    title: 'Terapia Presencial',
+    description: 'La terapia cara a cara permite una conexión humana directa y profunda, favorece la percepción no verbal completa, algunos pacientes la sienten más “real” o contenida, es ideal cuando se prefiere un espacio físico neutral para procesar emociones, salir de casa y entrar en un entorno terapéutico ayuda a muchas personas a concentrarse, reflexionar y separarse del estrés cotidiano.',
     icon: Users
   }, {
-    title: 'Evaluación Psicológica',
-    description: 'Evaluación completa para identificar fortalezas y áreas de oportunidad en tu desarrollo personal.',
+    title: 'Terapia Online',
+    description: 'La psicoterapia online se ha convertido en un recurso esencial, brindando flexibilidad y comodidad sin reducir la calidad del acompañamiento terapéutico. Ofrece ventajas como: la posibilidad de conectarter desde cualquier lugar privado, ahorro de tiempo y desplazamientos, continuidad incluso si cambias de ciudad. La terapia online es tan efectiva como la presencial.',
     icon: Brain
   }, {
     title: 'Manejo de Ansiedad',
