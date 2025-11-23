@@ -43,8 +43,8 @@ const App: React.FC = () => {
     // Encode message for URL
     const encodedText = encodeURIComponent(text);
     
-    // WhatsApp API link (using the phone number provided in the contact section: 5493462566242)
-    const whatsappUrl = `https://wa.me/5493462566242?text=${encodedText}`;
+    // WhatsApp API link (using the phone number provided in the contact section: 5493462330678)
+    const whatsappUrl = `https://wa.me/5493462330678?text=${encodedText}`;
     
     // Open in new tab
     window.open(whatsappUrl, '_blank');
@@ -231,7 +231,7 @@ const App: React.FC = () => {
                             </div>
                             <div>
                                 <h4 className="font-bold text-lg">Teléfono</h4>
-                                <p className="text-gray-400">+5493462566242</p>
+                                <p className="text-gray-400">+54 3462 330678</p>
                             </div>
                         </div>
 
