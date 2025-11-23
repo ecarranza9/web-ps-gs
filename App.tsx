@@ -189,7 +189,7 @@ const App: React.FC = () => {
       <Services />
 
       {/* CONTACT / FAQ */}
-      <section id={SectionId.CONTACT} className="scroll-mt-28 py-24 bg-[#333] text-white relative overflow-hidden">
+      <section id={SectionId.CONTACT} className="scroll-mt-34 py-24 bg-[#333] text-white relative overflow-hidden">
         {/* Background Texture */}
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         
@@ -205,13 +205,14 @@ const App: React.FC = () => {
                     
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
-                            <div className="bg-primary/20 p-3 rounded-lg text-primary">
+                            <div className="bg-primary/20 p-3 rounded-lg text-primary shrink-0">
                                 <MapPin size={24} />
                             </div>
                             <div>
-                                <h4 className="font-bold text-lg">Ubicación</h4>
-                                <p className="text-gray-400">Consultorio Privado / Atención Online</p>
-                                <p className="text-gray-500 text-sm mt-1">Maipú 1827, Rosario</p>
+                                <h4 className="font-bold text-lg mb-1">Ubicación</h4>
+                                <p className="text-gray-400 leading-relaxed">
+                                    Atención presencial: Maipú 1827, Rosario.
+                                </p>
                             </div>
                         </div>
                         
@@ -252,14 +253,14 @@ const App: React.FC = () => {
                     <h3 className="text-2xl font-serif font-bold mb-6 text-center">Envíame un mensaje</h3>
                     <form className="space-y-4" onSubmit={handleWhatsAppSubmit}>
                         <div>
-                            <label className="block text-sm font-bold mb-2 text-text-light">Nombre</label>
+                            <label className="block text-sm font-bold mb-2 text-text-light">Nombre y apellido</label>
                             <input 
                               type="text" 
                               name="name"
                               value={formData.name}
                               onChange={handleInputChange}
                               className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" 
-                              placeholder="Tu nombre" 
+                              placeholder="Tu nombre y apellido" 
                               required
                             />
                         </div>
