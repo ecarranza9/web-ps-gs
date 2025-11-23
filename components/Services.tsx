@@ -7,10 +7,12 @@ const ServiceCard = ({
 }) => {
   const Icon = icon;
   return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100">
-      <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center mb-4">
-        <Icon className="text-[#d4af37]" size={24} />
+      <div className="flex items-center gap-4 mb-4">
+        <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center shrink-0">
+          <Icon className="text-[#d4af37]" size={24} />
+        </div>
+        <h4 className="text-xl font-bold mb-1 text-text">{title}</h4>
       </div>
-      <h3 className="text-xl font-serif font-medium mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>;
 };
@@ -40,7 +42,7 @@ const Services = () => {
     description: 'Descubre tu verdadera vocación y toma decisiones profesionales alineadas con tus valores y habilidades.',
     icon: BookOpen
   }];
-  return <section id="servicios" className="py-16 md:py-24 px-6 md:px-12 bg-white">
+  return <section id="servicios" className="scroll-mt-26 py-16 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
