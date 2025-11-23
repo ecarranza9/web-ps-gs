@@ -13,7 +13,7 @@ const ServiceCard = ({
         </div>
         <h4 className="text-xl font-bold mb-1 text-text">{title}</h4>
       </div>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600 text-justify">{description}</p>
     </div>;
 };
 const Services = () => {

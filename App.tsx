@@ -80,7 +80,7 @@ const App: React.FC = () => {
                para <span className="text-primary italic">transformar</span> tu vida.
              </h1>
              <p className="text-lg md:text-[1.15rem] text-text-light leading-relaxed max-w-xl text-justify">
-             Acompaño en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal. Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
+             Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
                <a href="#contacto" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
@@ -126,7 +126,7 @@ const App: React.FC = () => {
               <h2 className="text-secondary font-sans uppercase tracking-widest text-sm font-bold mb-3">Sobre Mí</h2>
               <div className="w-16 h-1 bg-primary mb-8"></div>
               <p className="text-text-light leading-relaxed mb-6 text-justify">
-              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, me especialice en Terapia Cognitiva Conductual e Integrativa, me dedico a la atención a adultos. Mi vocación es compañar a las personas en sus procesos de cambios, posibilitando el autoconocimiento y autocuidado, potenciando el crecimiento y desarrollo personal.
+              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica. Mi vocación es acompañar a las personas adultas en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal, posibilitando el autoconocimiento y autocuidado.
               <br /><br />
               Mi objetivo es ofrecerte herramientas prácticas y efectivas, apoyo constante y un espacio de confianza para que puedas gestionar tus emociones, comprender tus patrones y construir cambios sostenibles en el tiempo.
               <br /><br />
@@ -154,11 +154,9 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h2 className="text-4xl font-serif text-text mb-4">Enfoque Terapéutico</h2>
-            <p className="text-text-light mb-12">
-                Trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica.
-            </p>
-            
+            <h2 className="text-4xl font-serif text-text mb-4">Enfoque Terapéutico</h2>  
+            <br /> 
+            <br />           
             <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary">
                     <Brain className="w-12 h-12 text-primary mb-6 mx-auto" />
