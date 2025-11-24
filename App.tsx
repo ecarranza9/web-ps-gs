@@ -155,7 +155,7 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-6xl">
-            <h2 className="text-3xl md:text-4xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
+            <h2 className="text-2xl md:text-3xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
               Enfoque Terapéutico
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
@@ -344,8 +344,6 @@ const App: React.FC = () => {
             </div>
         </div>
       </footer>
-
-      <ChatWidget />
     </div>
   );
 };

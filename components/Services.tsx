@@ -64,7 +64,7 @@ const Services = () => {
   return <section id="servicios" className="scroll-mt-22 py-16 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
+          <h2 className="text-2xl md:text-3xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
             Mis Servicios
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
