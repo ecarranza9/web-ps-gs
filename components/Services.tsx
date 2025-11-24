@@ -7,13 +7,14 @@ const ServiceCard = ({
 }) => {
   const Icon = icon;
   return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center justify-between gap-4 mb-4">
         <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center shrink-0">
           <Icon className="text-[#d4af37]" size={24} />
         </div>
-        <h4 className="text-xl font-bold mb-1 text-text">{title}</h4>
+        <h4 className="text-xl font-bold text-text text-center flex-grow">{title}</h4>
+        <div className="w-12 h-12 opacity-0 shrink-0" aria-hidden="true"></div>
       </div>
-      <p className="text-gray-600 text-justify">{description}</p>
+      <p className="text-gray-600 text-justify hyphens-auto">{description}</p>
     </div>;
 };
 const Services = () => {
