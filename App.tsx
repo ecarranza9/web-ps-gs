@@ -71,16 +71,17 @@ const App: React.FC = () => {
         <div className="absolute bottom-1/4 left-10 md:left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-6 relative z-10 text-center md:text-left md:flex md:items-center md:gap-16">
-          <div className="md:w-3/5 space-y-6 animate-fade-in-up">
+          <div className="md:w-1/2 space-y-6 animate-fade-in-up">
              <div className="inline-block px-4 py-1 border border-primary/50 rounded-full text-primary-dark text-sm font-medium tracking-wider mb-2 bg-white/50 backdrop-blur-sm">
                 PSICOLOGÍA CLÍNICA
              </div>
-             <h1 className="text-[2.8rem] md:text-[3.55rem] font-serif text-text font-medium leading-tight">
+             
+             <h1 className="text-[2.8rem] md:text-[3.75rem] font-serif text-text font-medium leading-snug">
                Tu espacio terapéutico<br />
                para <span className="text-primary italic">transformar</span> tu vida.
              </h1>
-             <p className="text-lg md:text-[1.15rem] text-text-light leading-relaxed max-w-xl text-justify">
-             Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
+             <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-xl">
+             Acompaño en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal. Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
                <a href="#contacto" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
@@ -93,7 +94,7 @@ const App: React.FC = () => {
           </div>
           
           {/* Image/Visual */}
-          <div className="hidden md:block md:w-2/5 relative">
+          <div className="hidden md:block md:w-1/2 relative">
             <div className="relative max-w-sm mx-auto aspect-square">
                 {/* Frame imitating the logo geometric shape */}
                 <div className="absolute inset-0 border-2 border-secondary rotate-3 rounded-full transform translate-x-4 translate-y-4"></div>
@@ -125,8 +126,8 @@ const App: React.FC = () => {
             <div className="md:w-1/2 order-1 md:order-2">
               <h2 className="text-secondary font-sans uppercase tracking-widest text-sm font-bold mb-3">Sobre Mí</h2>
               <div className="w-16 h-1 bg-primary mb-8"></div>
-              <p className="text-text-light leading-relaxed mb-6 text-justify">
-              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica. Mi vocación es acompañar a las personas adultas en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal, posibilitando el autoconocimiento y autocuidado.
+              <p className="text-text-light leading-relaxed mb-6 text-lg text-justify">
+              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, me especialice en Terapia Cognitiva Conductual e Integrativa, me dedico a la atención a adultos. Mi vocación es compañar a las personas en sus procesos de cambios, posibilitando el autoconocimiento y autocuidado, potenciando el crecimiento y desarrollo personal.
               <br /><br />
               Mi objetivo es ofrecerte herramientas prácticas y efectivas, apoyo constante y un espacio de confianza para que puedas gestionar tus emociones, comprender tus patrones y construir cambios sostenibles en el tiempo.
               <br /><br />
@@ -154,9 +155,7 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h2 className="text-4xl font-serif text-text mb-4">Enfoque Terapéutico</h2>  
-            <br /> 
-            <br />           
+            <h2 className="text-4xl font-serif text-text mb-16">Enfoque Terapéutico</h2>
             <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary">
                     <Brain className="w-12 h-12 text-primary mb-6 mx-auto" />
@@ -180,6 +179,8 @@ const App: React.FC = () => {
                     </p>
                 </div>
             </div>
+            <br />
+            <br />
         </div>
       </section>
 
@@ -207,7 +208,7 @@ const App: React.FC = () => {
                                 <MapPin size={24} />
                             </div>
                             <div>
-                                <h4 className="font-bold text-lg mb-1">Ubicación</h4>
+                                <h4 className="font-bold text-lg">Ubicación</h4>
                                 <p className="text-gray-400 leading-relaxed">
                                     Atención presencial: Maipú 1827, Rosario.
                                 </p>
@@ -275,7 +276,7 @@ const App: React.FC = () => {
                             ></textarea>
                         </div>
                         <button type="submit" className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
-                            Enviar Consulta a WhatsApp
+                            Enviar consulta a WhatsApp
                         </button>
                     </form>
                 </div>
@@ -288,7 +289,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
                 <h2 className="font-serif text-2xl font-bold text-primary">Giuliana Segura</h2>
-                <p className="text-gray-500 text-sm mt-1">Licenciada en Psicología</p>
+                <p className="text-gray-500 text-center mt-1">Lic. en Psicología</p>
             </div>
             <div className="flex gap-4">
                 <a 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Users, Brain, Sparkles, Leaf, BookOpen } from 'lucide-react';
+import { Heart, Users, Laptop, Sparkles, Leaf, BookOpen, Flower } from 'lucide-react';
 const ServiceCard = ({
   title,
   description,
@@ -18,31 +18,49 @@ const ServiceCard = ({
 };
 const Services = () => {
   const services = [{
-    title: 'Terapia Individual',
-    description: 'La terapia individual es un proceso de crecimiento personal, donde trabajas junto a un profesional para comprenderte mejor, y superar dificultades. Te propongo sesiones personalizadas para abordar tus necesidades específicas en un espacio confidencial y seguro.',
+    title: 'Psicoterapia',
+    description: 'Los principales objetivos son; reducir el malestar emocional, aprender a desarrollar habilidades, aprender a resolver conflictos interpersonales, afrontar situaciones, aprender a tomar decisiones, gestionar las emociones, modificar las creencias limitantes, cambiar hábitos, adquirir herramientas, fomentar el autoconocimiento, y mejorar la salud mental.',
     icon: Heart
   }, {
     title: 'Terapia Presencial',
-    description: 'La terapia cara a cara permite una conexión humana directa y profunda, favorece la percepción no verbal completa, algunos pacientes la sienten más “real” o contenida, es ideal cuando se prefiere un espacio físico neutral para procesar emociones, salir de casa y entrar en un entorno terapéutico ayuda a muchas personas a concentrarse, reflexionar y separarse del estrés cotidiano.',
+    description: 'La terapia cara a cara permite una conexión humana directa y profunda, favorece la percepción no verbal completa, algunos pacientes la sienten más “real” o contenida, es ideal cuando se prefiere un espacio físico neutral para hablar, salir de casa y entrar en un entorno terapéutico ayuda a muchas personas a concentrarse, reflexionar y separarse del estrés cotidiano.',
     icon: Users
   }, {
     title: 'Terapia Online',
-    description: 'La psicoterapia online se ha convertido en un recurso esencial, brindando flexibilidad y comodidad sin reducir la calidad del acompañamiento terapéutico. Ofrece ventajas como: la posibilidad de conectarter desde cualquier lugar privado, ahorro de tiempo y desplazamientos, continuidad incluso si cambias de ciudad. La terapia online es tan efectiva como la presencial.',
-    icon: Brain
+    description: 'La psicoterapia online se convirtio en un recurso esencial, brindando flexibilidad y comodidad sin reducir la calidad del acompañamiento terapéutico. Esta modalidad de terapia ofrece ventajas tales como; la posibilidad de conectarte desde cualquier lugar privado, el ahorro de tiempo y desplazamientos, la continuidad del tratamiento incluso si cambias de ciudad. La terapia online es tan efectiva como la presencial.',
+    icon: Laptop
   }, {
     title: 'Manejo de Ansiedad',
-    description: 'Técnicas efectivas para controlar la ansiedad y reducir el estrés en tu vida cotidiana.',
+    description: 'La ansiedad en la vida cotidiana suele manifestarse de formas muy variadas, a veces tan sutiles que pasan desapercibidas. En la terapia se implementan técnicas emocionales, fisiológicas, conductuales, cognitivas, fundamentadas en evidencia científica, para manejar la ansiedad de manera efectiva, y reducir el estrés que interfiere en la vida diaria.',
     icon: Sparkles
   }, {
     title: 'Mindfulness',
-    description: 'Aprende a vivir en el presente y desarrollar una mayor consciencia de tus pensamientos y emociones.',
+    description: 'Aprende a vivir en el presente y desarrollar una mayor consciencia de tus pensamientos, emociones y sensaciones. El Mindfiulness es una técnica que, reduce el estrés y la ansiedad, mejora la concentración y la atención, regula las emociones, mejora el bienestar general, puede ayudar a conciliar el sueño, y contribuye al manejo del dolor crónico.',
     icon: Leaf
   }, {
-    title: 'Orientación Vocacional',
-    description: 'Descubre tu verdadera vocación y toma decisiones profesionales alineadas con tus valores y habilidades.',
+    title: 'Especializaciones',
+    description: (
+      <ul className="space-y-2 mt-2 ml-3">
+        {[
+          'Estrés',
+          'Fobias',
+          'Ansiedad Social',
+          'Ansiedad Generalizada',
+          'Ataque de Pánico / Crisis de Angustia',
+          'Trastorno Obsesivo Compulsivo (TOC)'
+        ].map((item, i) => (
+          <li key={i} className="flex items-center gap-3 text-text text-left">
+            <span className="bg-primary/20 p-1 rounded-full text-primary-dark shrink-0">
+              <Flower size={14} />
+            </span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    ),
     icon: BookOpen
   }];
-  return <section id="servicios" className="scroll-mt-26 py-16 md:py-24 px-6 md:px-12 bg-white">
+  return <section id="servicios" className="scroll-mt-22 py-16 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
@@ -52,7 +70,6 @@ const Services = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />)}
         </div>
-        <div className="w-24 h-1 bg-gold mx-auto mb-10"></div>
       </div>
     </section>;
 };
