@@ -14,7 +14,7 @@ const ServiceCard = ({
         <h4 className="text-xl font-bold text-text text-center flex-grow">{title}</h4>
         <div className="w-12 h-12 opacity-0 shrink-0" aria-hidden="true"></div>
       </div>
-      <p className="text-gray-600 text-justify hyphens-auto">{description}</p>
+      <p className="text-gray-600 text-left">{description}</p>
     </div>;
 };
 const Services = () => {
@@ -64,9 +64,10 @@ const Services = () => {
   return <section id="servicios" className="scroll-mt-22 py-16 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
+          <h2 className="text-3xl md:text-4xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
             Mis Servicios
           </h2>
+          <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />)}

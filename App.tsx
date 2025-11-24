@@ -155,7 +155,10 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-6xl">
-            <h2 className="text-4xl font-serif text-text mb-10">Enfoque Terapéutico</h2>
+            <h2 className="text-3xl md:text-4xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
+              Enfoque Terapéutico
+            </h2>
+            <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-text-light mb-12">
                 Trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica.
             </p>
@@ -207,7 +210,7 @@ const App: React.FC = () => {
                 
                 {/* Contact Info */}
                 <div className="lg:w-1/2">
-                    <h2 className="text-4xl font-serif mb-6">Comienza tu proceso</h2>
+                    <h2 className="text-4xl font-sans mb-6">Comienza tu proceso</h2>
                     <p className="text-gray-300 mb-10 text-lg">
                         Dar el primer paso es lo más importante. Si tienes dudas o quieres agendar una sesión, no dudes en escribirme.
                     </p>
@@ -259,7 +262,7 @@ const App: React.FC = () => {
 
                 {/* Form */}
                 <div className="lg:w-1/2 bg-white text-text p-8 rounded-2xl shadow-2xl">
-                    <h3 className="text-2xl font-serif font-bold mb-6 text-center">Envíame un mensaje</h3>
+                    <h3 className="text-2xl font-sans font-bold mb-6 text-center">Envíame un mensaje</h3>
                     <form className="space-y-4" onSubmit={handleWhatsAppSubmit}>
                         <div>
                             <label className="block text-sm font-bold mb-2 text-text-light">Nombre y apellido</label>
