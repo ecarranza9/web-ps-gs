@@ -7,7 +7,7 @@ const ServiceCard = ({
 }) => {
   const Icon = icon;
   return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100">
-      <div className="flex items-center gap-4 mb-4">
+      <div className="flex items-center gap-4">
         <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center shrink-0">
           <Icon className="text-[#d4af37]" size={24} />
         </div>
@@ -62,7 +62,7 @@ const Services = () => {
   }];
   return <section id="servicios" className="scroll-mt-22 py-16 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">
             Mis Servicios
           </h2>

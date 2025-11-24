@@ -71,21 +71,21 @@ const App: React.FC = () => {
         <div className="absolute bottom-1/4 left-10 md:left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-6 relative z-10 text-center md:text-left md:flex md:items-center md:gap-16">
-          <div className="md:w-1/2 space-y-6 animate-fade-in-up">
+          <div className="md:w-3/5 space-y-6 animate-fade-in-up">
              <div className="inline-block px-4 py-1 border border-primary/50 rounded-full text-primary-dark text-sm font-medium tracking-wider mb-2 bg-white/50 backdrop-blur-sm">
                 PSICOLOGÍA CLÍNICA
              </div>
              
-             <h1 className="text-[2.8rem] md:text-[3.75rem] font-serif text-text font-medium leading-snug">
+              <h1 className="text-[2.8rem] md:text-[3.55rem] font-serif text-text font-medium leading-tight">
                Tu espacio terapéutico<br />
                para <span className="text-primary italic">transformar</span> tu vida.
              </h1>
-             <p className="text-lg md:text-xl text-text-light leading-relaxed max-w-xl">
-             Acompaño en procesos de ansiedad, estrés, crisis, crecimiento y desarrollo personal. Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
+              <p className="text-lg md:text-[1.15rem] text-text-light leading-relaxed max-w-xl text-justify">
+              Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
                <a href="#contacto" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
-                 Agendar Consulta
+                 Agendar consulta
                </a>
                <a href="#sobre-mi" className="bg-white text-text border border-gray-200 px-8 py-3 rounded-lg hover:border-primary hover:text-primary transition-all text-center font-medium flex items-center justify-center gap-2">
                  Conocer más <ArrowRight size={18}/>
@@ -154,31 +154,41 @@ const App: React.FC = () => {
 
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
-        <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h2 className="text-4xl font-serif text-text mb-16">Enfoque Terapéutico</h2>
+        <div className="container mx-auto px-6 text-center max-w-6xl">
+            <h2 className="text-4xl font-serif text-text mb-10">Enfoque Terapéutico</h2>
+            <p className="text-text-light mb-12">
+                Trabajo desde una perspectiva integradora, utilizando principalmente la Terapia Cognitivo-Conductual (TCC), reconocida por su eficacia científica.
+            </p>
             <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary">
-                    <Brain className="w-12 h-12 text-primary mb-6 mx-auto" />
-                    <h4 className="text-xl font-bold mb-3 text-text">Cognitivo-Conductual</h4>
-                    <p className="text-sm text-text-light leading-relaxed">
+                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary flex flex-col">
+                    <div className="mb-6 flex-grow-0">
+                        <Brain className="w-12 h-12 text-primary mx-auto" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-4 text-text h-8 flex items-center justify-center">Cognitivo-Conductual</h4>
+                    <p className="text-sm text-text-light leading-relaxed flex-grow">
                         Identificamos y modificamos patrones de pensamiento y comportamiento que generan malestar, buscando soluciones prácticas.
                     </p>
                 </div>
-                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-secondary">
-                    <Heart className="w-12 h-12 text-secondary mb-6 mx-auto" />
-                    <h4 className="text-xl font-bold mb-3 text-text">Integrativo & Humano</h4>
-                    <p className="text-sm text-text-light leading-relaxed">
+                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-secondary flex flex-col">
+                    <div className="mb-6 flex-grow-0">
+                        <Heart className="w-12 h-12 text-secondary mx-auto" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-4 text-text h-8 flex items-center justify-center">Integrativo & Humano</h4>
+                    <p className="text-sm text-text-light leading-relaxed flex-grow">
                         Más allá de la técnica, priorizo el vínculo terapéutico. Adaptamos las herramientas a tu historia y personalidad.
                     </p>
                 </div>
-                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary">
-                    <Users className="w-12 h-12 text-primary mb-6 mx-auto" />
-                    <h4 className="text-xl font-bold mb-3 text-text">Autonomía</h4>
-                    <p className="text-sm text-text-light leading-relaxed">
-                        El objetivo no es que dependas de la terapia por siempre, sino que desarrolles tus propias herramientas para el futuro.
+                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary flex flex-col">
+                    <div className="mb-6 flex-grow-0">
+                        <Users className="w-12 h-12 text-primary mx-auto" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-4 text-text h-8 flex items-center justify-center">Autonomía</h4>
+                    <p className="text-sm text-text-light leading-relaxed flex-grow">
+                      El objetivo es generar cambios sostenidos en el tiempo, y que desarrolles tus propias herramientas para el futuro.
                     </p>
                 </div>
             </div>
+            <br />
             <br />
             <br />
         </div>
@@ -289,7 +299,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
                 <h2 className="font-serif text-2xl font-bold text-primary">Giuliana Segura</h2>
-                <p className="text-gray-500 text-center mt-1">Lic. en Psicología</p>
+                <p className="text-gray-500 text-center md:text-center mt-1">Lic. en Psicología</p>
             </div>
             <div className="flex gap-4">
                 <a 
