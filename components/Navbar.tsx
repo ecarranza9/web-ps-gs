@@ -4,9 +4,9 @@ import { Menu, X } from 'lucide-react';
 
 const navItems: NavItem[] = [
   { label: 'Inicio', id: SectionId.HOME },
-  { label: 'Sobre Mí', id: SectionId.ABOUT },
+  { label: 'Presentación', id: SectionId.ABOUT },
   { label: 'Enfoque Terapéutico', id: SectionId.APPROACH },
-  { label: 'Mis Servicios', id: SectionId.SERVICES },
+  { label: 'Servicios', id: SectionId.SERVICES },
   { label: 'Contacto', id: SectionId.CONTACT },
 ];
 

@@ -124,29 +124,17 @@ const App: React.FC = () => {
             </div>
           </div>
             <div className="md:w-1/2 order-1 md:order-2">
-              <h2 className="text-secondary font-sans uppercase tracking-widest text-sm font-bold mb-3">Sobre Mí</h2>
+              <h2 className="text-secondary font-sans uppercase tracking-widest text-lg font-bold mb-3">Presentación</h2>
               <div className="w-16 h-1 bg-primary mb-8"></div>
               <p className="text-text-light leading-relaxed mb-6 text-lg text-justify">
-              Mi nombre es Giuliana Segura, soy Licenciada en Psicología, me especialice en Terapia Cognitiva Conductual e Integrativa, me dedico a la atención a adultos. Mi vocación es compañar a las personas en sus procesos de cambios, posibilitando el autoconocimiento y autocuidado, potenciando el crecimiento y desarrollo personal.
+              Mi nombre es Giuliana Segura, soy Licenciada en Psicología. Me especialicé en Psicología Clínica con un enfoque Cognitivo-Conductual e Integrativo. Acompaño a jóvenes mayores de 18 años y a adultos en sus procesos terapéuticos, tanto en modalidad presencial en Rosario como online.
               <br /><br />
-              Mi objetivo es ofrecerte herramientas prácticas y efectivas, apoyo constante y un espacio de confianza para que puedas gestionar tus emociones, comprender tus patrones y construir cambios sostenibles en el tiempo.
+              Mi vocación es acompañar a las personas en momentos de ansiedad, tistezas, estrés y crisis vitales, desde una mirada empática que promueve el autoconocimiento y el autocuidado. Te brindo un espacio seguro y confidencial, donde puedas expresarte con libertad, recibir una escucha terapéutica auténtica y un apoyo presente a lo largo de tu proceso.
               <br /><br />
-              Creo firmemente que cada persona es única, por lo que mi enfoque combina técnicas basadas en evidencia con una mirada humana y flexible, adaptada a tus necesidades específicas.
+              Mi propósito es ofrecerte herramientas útiles y aplicables a tu vida cotidiana. Creo firmemente que cada persona es única, por eso combino técnicas basadas en evidencia con un enfoque humano, flexible y adaptado a tus necesidades.
+              <br /><br />
+              <span className="font-handwriting text-3xl text-primary block mt-2">“Te acompaño en el cuidado de tu salud mental”.</span>
               </p>
-              <ul className="space-y-3 mt-8">
-                <li className="flex items-center gap-3 text-text">
-                    <span className="bg-primary/20 p-1 rounded-full text-primary-dark"><Sparkles size={16} /></span>
-                    <span>Espacio seguro y confidencial</span>
-                </li>
-                <li className="flex items-center gap-3 text-text">
-                    <span className="bg-primary/20 p-1 rounded-full text-primary-dark"><Sparkles size={16} /></span>
-                    <span>Enfoque flexible y empático</span>
-                </li>
-                <li className="flex items-center gap-3 text-text">
-                    <span className="bg-primary/20 p-1 rounded-full text-primary-dark"><Sparkles size={16} /></span>
-                    <span>Herramientas para la vida diaria</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -155,7 +143,7 @@ const App: React.FC = () => {
       {/* APPROACH (ENFOQUE) */}
       <section id={SectionId.APPROACH} className="scroll-mt-28 py-20 bg-background">
         <div className="container mx-auto px-6 text-center max-w-6xl">
-            <h2 className="text-2xl md:text-3xl text-secondary font-sans uppercase tracking-widest font-medium mb-4">
+            <h2 className="text-2xl md:text-3xl text-secondary font-sans uppercase tracking-wide font-medium mb-4">
               Enfoque Terapéutico
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
@@ -210,9 +198,9 @@ const App: React.FC = () => {
                 
                 {/* Contact Info */}
                 <div className="lg:w-1/2">
-                    <h2 className="text-4xl font-sans mb-6">Comienza tu proceso</h2>
-                    <p className="text-gray-300 mb-10 text-lg">
-                        Dar el primer paso es lo más importante. Si tienes dudas o quieres agendar una sesión, no dudes en escribirme.
+                    <h2 className="text-4xl font-sans mb-6 text-primary">Comienza tu proceso</h2>
+                    <p className="text-gray-300 mb-10 text-lg text-justify max-w-md">
+                        Dar el primer paso es lo más importante. Si queres realizar una consulta o agendar una sesión, no dudes en escribirme.
                     </p>
                     
                     <div className="space-y-6">
