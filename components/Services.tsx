@@ -4,7 +4,7 @@ const ServiceCard = ({
   title,
   description,
   icon
-}) => {
+}: { title: string; description: React.ReactNode; icon: React.ElementType }) => {
   const Icon = icon;
   return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100">
       <div className="flex items-center justify-between gap-4 mb-4">
@@ -14,7 +14,7 @@ const ServiceCard = ({
         <h4 className="text-xl font-bold text-text text-center flex-grow">{title}</h4>
         <div className="w-12 h-12 opacity-0 shrink-0" aria-hidden="true"></div>
       </div>
-      <p className="text-gray-600 text-left">{description}</p>
+      <p className="text-gray-600 text-base text-center md:text-left">{description}</p>
     </div>;
 };
 const Services = () => {
@@ -61,16 +61,24 @@ const Services = () => {
     ),
     icon: BookOpen
   }];
-  return <section id="servicios" className="scroll-mt-22 py-16 md:py-24 px-6 md:px-12 bg-white">
+  return <section id="servicios" className="scroll-mt-22 py-12 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl text-secondary font-sans uppercase tracking-wide font-medium mb-4">
+        <div className="text-left md:text-center mb-8 md:mb-10">
+        <h2 className="text-lg md:text-3xl text-secondary font-sans uppercase tracking-widest font-bold mb-3">
             Servicios
           </h2>
-          <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
+          <div className="w-16 h-1 bg-primary mr-auto md:mx-auto mb-8"></div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />)}
+          {services.map((service, index) => (
+            <div key={index}>
+                <ServiceCard 
+                  title={service.title} 
+                  description={service.description} 
+                  icon={service.icon} 
+                />
+            </div>
+          ))}
         </div>
       </div>
     </section>;

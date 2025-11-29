@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { NavItem, SectionId } from '../types';
 import { Menu, X } from 'lucide-react';
 
+import logo from '../assets/img/logo.jpeg';
+
 const navItems: NavItem[] = [
   { label: 'Inicio', id: SectionId.HOME },
   { label: 'Presentación', id: SectionId.ABOUT },
@@ -39,9 +41,22 @@ export const Navbar: React.FC = () => {
           className="cursor-pointer group"
           onClick={() => scrollToSection(SectionId.HOME)}
         >
-           <div className="font-serif text-2xl font-bold text-text tracking-wide group-hover:text-primary transition-colors">
-             GS
-             <span className="block text-xs font-sans font-normal text-secondary uppercase tracking-widest">Lic. Giuliana Segura</span>
+           <div className="font-serif text-2xl font-bold text-text tracking-wide group-hover:text-primary transition-colors flex items-center gap-3">
+             {/* Desktop Logo (GS) */}
+             <span className="hidden md:block">
+               GS
+               <span className="block text-xs font-sans font-normal text-secondary uppercase tracking-widest">Lic. Giuliana Segura</span>
+             </span>
+             
+             {/* Mobile Logo (Image) */}
+             <div className="md:hidden w-12 h-12 rounded-full overflow-hidden border border-secondary/30">
+               <img src={logo} alt="Logo" className="w-full h-full object-cover" />
+             </div>
+
+             <div className="md:hidden flex flex-col items-center">
+                <span className="font-serif text-base font-bold text-primary leading-none">Giuliana Segura</span>
+                <span className="block text-[0.7rem] text-gray-500 text-center w-full">Lic. en Psicología</span>
+             </div>
            </div>
         </div>
 
