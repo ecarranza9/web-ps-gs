@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
 
              <div className="md:hidden flex flex-col items-center">
                 <span className="font-serif text-base font-bold text-primary leading-none">Giuliana Segura</span>
-                <span className="block text-[0.7rem] text-gray-500 text-center w-full">Lic. en Psicología</span>
+                <span className="block text-[0.7rem] text-gray-500 text-center w-full mt-[2px]">Lic. en Psicología</span>
              </div>
            </div>
         </div>

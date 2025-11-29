@@ -61,7 +61,7 @@ const Services = () => {
     ),
     icon: BookOpen
   }];
-  return <section id="servicios" className="scroll-mt-22 py-12 md:py-24 px-6 md:px-12 bg-white">
+  return <section id="servicios" className="scroll-mt-22 py-10 md:py-24 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-left md:text-center mb-8 md:mb-10">
         <h2 className="text-lg md:text-3xl text-secondary font-sans uppercase tracking-widest font-bold mb-3">
