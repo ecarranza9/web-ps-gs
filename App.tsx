@@ -83,7 +83,10 @@ const App: React.FC = () => {
               Te ofrezco un espacio seguro donde puedas explorar tus emociones, comprender lo que estás viviendo y avanzar hacia una vida con mayor bienestar y claridad.
              </p>
              <div className="flex flex-col md:flex-row gap-4 pt-4">
-               <a href="#contacto" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
+               <a href="#formulario-contacto" className="md:hidden bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
+                 Agendar consulta
+               </a>
+               <a href="#contacto" className="hidden md:block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl text-center font-medium tracking-wide">
                  Agendar consulta
                </a>
                <a href="#sobre-mi" className="bg-white text-text border border-gray-200 px-8 py-3 rounded-lg hover:border-primary hover:text-primary transition-all text-center font-medium flex items-center justify-center gap-2">
@@ -295,7 +298,7 @@ const App: React.FC = () => {
                 </div>
 
                 {/* Form */}
-                <div className="lg:w-1/2 bg-white text-text p-8 rounded-2xl shadow-2xl">
+                <div id="formulario-contacto" className="lg:w-1/2 bg-white text-text p-8 rounded-2xl shadow-2xl scroll-mt-24">
                     <h3 className="text-2xl font-sans font-bold mb-6 text-center">Envíame un mensaje</h3>
                     <form className="space-y-4" onSubmit={handleWhatsAppSubmit}>
                         <div>
