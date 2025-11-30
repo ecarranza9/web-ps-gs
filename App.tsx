@@ -56,15 +56,6 @@ const App: React.FC = () => {
       {/* HERO SECTION */}
       <section id={SectionId.HOME} className="relative h-auto md:h-screen md:min-h-[600px] flex items-start md:items-center justify-center overflow-hidden bg-gradient-to-b from-white via-[#faf3f4] to-background pt-24 md:pt-0 pb-10 md:pb-0">
         {/* Decorative Background Elements */}
-        {/* Psychology Symbol Background as requested */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
-             <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Psychology_symbol.svg/1024px-Psychology_symbol.svg.png" 
-                alt="Psychology Symbol"
-                className="w-[80%] max-w-3xl h-auto object-contain"
-             />
-        </div>
-        
         {/* Geometric Decoration (Hexagon concept from logo) */}
         <div className="absolute top-1/4 right-10 md:right-1/4 w-64 h-64 border-2 border-secondary/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 left-10 md:left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
@@ -181,7 +172,7 @@ const App: React.FC = () => {
               <p className="text-base md:text-[1.15rem] text-text-light leading-relaxed mb-6 text-center md:text-justify">
               Mi nombre es Giuliana Segura, soy Licenciada en Psicología. Me especialicé en Psicología Clínica con un enfoque Cognitivo-Conductual e Integrativo. Acompaño a jóvenes mayores de 18 años y a adultos en sus procesos terapéuticos, tanto en modalidad presencial en Rosario como online.
               <br /><br />
-              Mi vocación es acompañar a las personas en momentos de ansiedad, tistezas, estrés y crisis vitales, desde una mirada empática que promueve el autoconocimiento y el autocuidado. Te brindo un espacio seguro y confidencial, donde puedas expresarte con libertad, recibir una escucha terapéutica auténtica y un apoyo presente a lo largo de tu proceso.
+              Mi vocación es acompañar a las personas en momentos de ansiedad, tristezas, estrés y crisis vitales, desde una mirada empática que promueve el autoconocimiento y el autocuidado. Te brindo un espacio seguro y confidencial, donde puedas expresarte con libertad, recibir una escucha terapéutica auténtica y un apoyo presente a lo largo de tu proceso.
               <br /><br />
               Mi propósito es ofrecerte herramientas útiles y aplicables a tu vida cotidiana. Creo firmemente que cada persona es única, por eso combino técnicas basadas en evidencia con un enfoque humano, flexible y adaptado a tus necesidades.
               <br /><br />
