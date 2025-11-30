@@ -7,11 +7,11 @@ const ServiceCard = ({
 }: { title: string; description: React.ReactNode; icon: React.ElementType }) => {
   const Icon = icon;
   return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100 h-full flex flex-col">
-      <div className="flex items-center justify-between gap-4 mb-4 shrink-0">
+      <div className="flex items-center justify-between gap-2 mb-4 shrink-0">
         <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center shrink-0">
           <Icon className="text-[#d4af37]" size={24} />
         </div>
-        <h4 className="text-xl font-bold text-text text-center flex-grow">{title}</h4>
+        <h4 className="text-lg sm:text-xl font-bold text-text text-center flex-grow leading-tight">{title}</h4>
         <div className="w-12 h-12 opacity-0 shrink-0" aria-hidden="true"></div>
       </div>
       <div className="text-gray-600 text-base text-center md:text-left flex-grow">
@@ -33,7 +33,7 @@ const Services = () => {
     description: 'La psicoterapia online se convirtio en un recurso esencial, brindando flexibilidad y comodidad sin reducir la calidad del acompañamiento terapéutico. Esta modalidad de terapia ofrece ventajas tales como; la posibilidad de conectarte desde cualquier lugar privado, el ahorro de tiempo y desplazamientos, la continuidad del tratamiento incluso si cambias de ciudad. La terapia online es tan efectiva como la presencial.',
     icon: Laptop
   }, {
-    title: 'Manejo de Ansiedad',
+    title: 'Manejo de ansiedad',
     description: 'La ansiedad en la vida cotidiana suele manifestarse de formas muy variadas, a veces tan sutiles que pasan desapercibidas. En la terapia se implementan técnicas emocionales, fisiológicas, conductuales, cognitivas, fundamentadas en evidencia científica, para manejar la ansiedad de manera efectiva, y reducir el estrés que interfiere en la vida diaria.',
     icon: Sparkles
   }, {

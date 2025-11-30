@@ -244,7 +244,7 @@ const App: React.FC = () => {
                 
                 {/* Contact Info */}
                 <div className="lg:w-1/2">
-                    <h2 className="text-4xl font-sans mb-6 text-primary">Comienza tu proceso</h2>
+                    <h2 className="text-3xl md:text-4xl font-sans mb-6 text-primary">Comienza tu proceso</h2>
                     <p className="text-gray-300 mb-10 text-lg text-justify max-w-md">
                         Dar el primer paso es lo más importante. Si queres realizar una consulta o agendar una sesión, no dudes en escribirme.
                     </p>
