@@ -6,15 +6,17 @@ const ServiceCard = ({
   icon
 }: { title: string; description: React.ReactNode; icon: React.ElementType }) => {
   const Icon = icon;
-  return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100">
-      <div className="flex items-center justify-between gap-4 mb-4">
+  return <div className="service-card bg-background p-6 rounded-lg shadow-sm border border-gray-100 h-full flex flex-col">
+      <div className="flex items-center justify-between gap-4 mb-4 shrink-0">
         <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center shrink-0">
           <Icon className="text-[#d4af37]" size={24} />
         </div>
         <h4 className="text-xl font-bold text-text text-center flex-grow">{title}</h4>
         <div className="w-12 h-12 opacity-0 shrink-0" aria-hidden="true"></div>
       </div>
-      <p className="text-gray-600 text-base text-center md:text-left">{description}</p>
+      <div className="text-gray-600 text-base text-center md:text-left flex-grow">
+        {description}
+      </div>
     </div>;
 };
 const Services = () => {
@@ -69,9 +71,9 @@ const Services = () => {
           </h2>
           <div className="w-16 h-1 bg-primary mr-auto md:mx-auto mb-8"></div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {services.map((service, index) => (
-            <div key={index}>
+            <div key={index} className="h-full">
                 <ServiceCard 
                   title={service.title} 
                   description={service.description} 

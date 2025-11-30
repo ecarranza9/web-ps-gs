@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
-import { ChatWidget } from './components/ChatWidget';
 import { SectionId } from './types';
 import { 
   Brain, 
@@ -14,8 +13,9 @@ import {
   Instagram,
   Linkedin
 } from 'lucide-react';
+import image5 from './assets/img/img5.png';
+import image7 from './assets/img/img7.jpg';
 import logo from './assets/img/logo.jpeg';
-import meImage from './assets/img/me.jpeg';
 import Services from './components/Services';
 
 const App: React.FC = () => {
@@ -91,8 +91,8 @@ const App: React.FC = () => {
                </a>
              </div>
 
-             {/* Mobile Social Icons */}
-             <div className="md:hidden flex justify-center gap-6 pt-6">
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start gap-6 pt-6">
                 <a 
                   href="https://www.instagram.com/ps.giuliana.segura" 
                   target="_blank" 
@@ -135,7 +135,7 @@ const App: React.FC = () => {
                 {/* Frame imitating the logo geometric shape */}
                 <div className="absolute inset-0 border-2 border-secondary rotate-3 rounded-full transform translate-x-4 translate-y-4"></div>
                 <img 
-                  src={logo} 
+                  src={image5} 
                   alt="Logo de Giuliana Segura" 
                   className="w-full h-full object-cover rounded-full shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-700"
                 />
@@ -153,7 +153,7 @@ const App: React.FC = () => {
                 {/* Frame imitating the logo geometric shape */}
                 <div className="absolute inset-0 border-2 border-secondary rotate-3 rounded-xl transform translate-x-4 translate-y-4"></div>
                 <img 
-                  src={meImage} 
+                  src={image7} 
                   alt="Espacio Terapéutico" 
                   className="w-full h-full object-cover rounded-xl shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-700"
                 />
@@ -168,7 +168,7 @@ const App: React.FC = () => {
                 <div className="relative w-48 h-48">
                   <div className="absolute inset-0 border-2 border-secondary rotate-3 rounded-full transform translate-x-2 translate-y-2"></div>
                   <img 
-                    src={meImage} 
+                    src={image5} 
                     alt="Giuliana Segura" 
                     className="w-full h-full object-cover rounded-full shadow-lg" 
                   />
@@ -182,7 +182,7 @@ const App: React.FC = () => {
               <br /><br />
               Mi propósito es ofrecerte herramientas útiles y aplicables a tu vida cotidiana. Creo firmemente que cada persona es única, por eso combino técnicas basadas en evidencia con un enfoque humano, flexible y adaptado a tus necesidades.
               <br /><br />
-              <span className="font-handwriting text-xl md:text-3xl text-primary block mt-2 text-center">“Te acompaño en el cuidado de tu salud mental”.</span>
+              <span className="font-handwriting text-lg md:text-2xl text-primary-dark block mt-2 text-center">Te acompaño en el cuidado de tu salud mental.</span>
               </p>
             </div>
           </div>
@@ -334,9 +334,14 @@ const App: React.FC = () => {
       {/* FOOTER */}
       <footer className="bg-[#222] text-white py-12 border-t border-gray-800">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-                <h2 className="font-serif text-2xl font-bold text-primary">Giuliana Segura</h2>
-                <p className="text-gray-500 text-center md:text-center mt-1">Lic. en Psicología</p>
+            <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/30">
+                    <img src={logo} alt="Logo Giuliana Segura" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                    <h2 className="font-serif text-2xl font-bold text-primary">Giuliana Segura</h2>
+                    <p className="text-gray-400 text-sm mt-1 text-center">Lic. en Psicología</p>
+                </div>
             </div>
             <div className="flex gap-4">
                 <a 

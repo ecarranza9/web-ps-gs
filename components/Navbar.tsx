@@ -42,18 +42,12 @@ export const Navbar: React.FC = () => {
           onClick={() => scrollToSection(SectionId.HOME)}
         >
            <div className="font-serif text-2xl font-bold text-text tracking-wide group-hover:text-primary transition-colors flex items-center gap-3">
-             {/* Desktop Logo (GS) */}
-             <span className="hidden md:block">
-               GS
-               <span className="block text-xs font-sans font-normal text-secondary uppercase tracking-widest">Lic. Giuliana Segura</span>
-             </span>
-             
-             {/* Mobile Logo (Image) */}
-             <div className="md:hidden w-12 h-12 rounded-full overflow-hidden border border-secondary/30">
+             {/* Logo (Image) */}
+             <div className="w-12 h-12 rounded-full overflow-hidden border border-secondary/30">
                <img src={logo} alt="Logo" className="w-full h-full object-cover" />
              </div>
 
-             <div className="md:hidden flex flex-col items-center">
+             <div className="flex flex-col items-center">
                 <span className="font-serif text-base font-bold text-primary leading-none">Giuliana Segura</span>
                 <span className="block text-[0.7rem] text-gray-500 text-center w-full mt-[2px]">Lic. en Psicología</span>
              </div>
