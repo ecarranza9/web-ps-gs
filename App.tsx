@@ -10,8 +10,7 @@ import {
   Mail, 
   Phone,
   ArrowRight,
-  Instagram,
-  Linkedin
+  Instagram
 } from 'lucide-react';
 import image5 from './assets/img/img5.png';
 import image7 from './assets/img/img7.jpg';
@@ -91,23 +90,15 @@ const App: React.FC = () => {
                   href="https://www.instagram.com/ps.giuliana.segura" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-primary hover:text-primary-dark transition-colors"
+                  className="bg-primary/20 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   <Instagram size={24} />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/in/giuliana-segura-2569422b6" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary-dark transition-colors"
-                >
-                  <Linkedin size={24} />
                 </a>
                 <a 
                   href="https://wa.link/0eicmo" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-primary hover:text-primary-dark transition-colors"
+                  className="bg-primary/20 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   {/* WhatsApp SVG Brand Icon */}
                   <svg 
@@ -342,23 +333,15 @@ const App: React.FC = () => {
                   href="https://www.instagram.com/ps.giuliana.segura" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-primary/10 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
+                  className="bg-primary/20 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   <Instagram size={20} />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/in/giuliana-segura-2569422b6" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-primary/10 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                >
-                  <Linkedin size={20} />
                 </a>
                 <a 
                   href="https://wa.link/0eicmo" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-primary/10 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300"
+                  className="bg-primary/20 p-3 rounded-lg text-primary hover:bg-primary hover:text-white transition-all duration-300 ml-5"
                 >
                   {/* WhatsApp SVG Brand Icon */}
                   <svg 
