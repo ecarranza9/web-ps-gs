@@ -160,7 +160,7 @@ const App: React.FC = () => {
                 </div>
               </div>
 
-              <p className="text-base md:text-[1.15rem] text-text-light leading-relaxed mb-6 text-center md:text-justify">
+              <p className="text-text-light leading-relaxed mb-6 text-center md:text-justify">
               Mi nombre es Giuliana Segura, soy Licenciada en Psicología. Me especialicé en Psicología Clínica con un enfoque Cognitivo-Conductual e Integrativo. Acompaño a jóvenes mayores de 18 años y a adultos en sus procesos terapéuticos, tanto en modalidad presencial en Rosario como online.
               <br /><br />
               Mi vocación es acompañar a las personas en momentos de ansiedad, tristezas, estrés y crisis vitales, desde una mirada empática que promueve el autoconocimiento y el autocuidado. Te brindo un espacio seguro y confidencial, donde puedas expresarte con libertad, recibir una escucha terapéutica auténtica y un apoyo presente a lo largo de tu proceso.
